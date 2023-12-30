@@ -41,16 +41,14 @@
     <script>
         left=0
         down=0
-        right=0
-        up=0
     </script>
 
     <div id="controls">
         <div>
-            <button onclick="up+=20; up>440?up=440:null; box.innerHTML=`<div class='robot' style='margin-bottom:${up}px'></div>`"><img src="https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Actions-arrow-up-icon.png" alt=""></button>
+            <button onclick="down-=20; down<0?down=0:null; box.innerHTML=`<div class='robot' style='margin-top:${down}px'></div>`"><img src="https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Actions-arrow-up-icon.png" alt=""></button>
         </div>
         <div>
-            <button onclick="right+=20; right>440?right=440:null; box.innerHTML=`<div class='robot' style='margin-right:${right}px'></div>`"><img src="https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Actions-arrow-left-icon.png" alt=""></button>
+            <button onclick="left-=20; left<0?left=0:null; box.innerHTML=`<div class='robot' style='margin-left:${left}px'></div>`"><img src="https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Actions-arrow-left-icon.png" alt=""></button>
             <button onclick="left+=20; left>440?left=440:null; box.innerHTML=`<div class='robot' style='margin-left:${left}px'></div>`"><img src="https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/48/Actions-arrow-right-icon.png" alt=""></button>
         </div>
         <div>
